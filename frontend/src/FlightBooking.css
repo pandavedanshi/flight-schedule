@@ -1,0 +1,79 @@
+.flight-booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('C:\Users\pveda\OneDrive\Desktop\flight-schedule\src\assets\airplane.jpeg'); /* Use appropriate image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c1502e;
+    border: none;
+    outline: none;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .tab.active {
+    background-color: #b8421f;
+  }
+  
+  form h2 {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #b8421f;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .flight-status-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #b8421f;
+    text-decoration: none;
+  }
+  
