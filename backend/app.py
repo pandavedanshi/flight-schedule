@@ -4,8 +4,10 @@ import pickle
 
 
 # Create flask app
-flask_app = Flask(__name__)
-model = pickle.load(open("backend\model.pkl", "rb"))
+flask_app = Flask(__name__, template_folder='template')
+model = pickle.load(open("./model.pkl", "rb"))
+
+
 
 @flask_app.route("/")
 def Home():
@@ -16,7 +18,7 @@ def predict():
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
     prediction = model.predict(features)
-    return render_template("index.html", prediction_text = "the delay is {}".format(prediction))
+    return jsonify({"prediction": prediction[0]})
 
 if __name__ == "__main__":
     flask_app.run(debug=True)

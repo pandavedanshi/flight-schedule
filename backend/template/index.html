@@ -18,8 +18,8 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="ORIGIN" placeholder="Origin" required="required" />
-        <input type="text" name="DEST" placeholder="destination" required="required" />
-		<input type="text" name="OP_UNIQUE_CARRIER" placeholder="Unique_Carrier" required="required" />
+      <input type="text" name="DEST" placeholder="destination" required="required" />
+		  <input type="text" name="OP_UNIQUE_CARRIER" placeholder="Unique_Carrier" required="required" />
 		<!-- <input type="text" name="Petal_Width" placeholder="Petal_Width" required="required" /> -->
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>

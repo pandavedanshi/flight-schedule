@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('C:\Users\pveda\OneDrive\Desktop\flight-schedule\src\assets\airplane.jpeg'); /* Use appropriate image path */
+    background-image: url('C:\Users\pveda\OneDrive\Desktop\flight-schedule\frontend\src\airplane.jpeg'); 
     background-size: cover;
     background-position: center;
   }
